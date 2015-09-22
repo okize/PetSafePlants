@@ -14,7 +14,6 @@
 .*/node_modules/react-tools/src/renderers/shared/event/eventPlugins/ResponderEventPlugin.js
 .*/node_modules/react-tools/src/shared/vendor/core/ExecutionEnvironment.js
 
-
 # Ignore commoner tests
 .*/node_modules/commoner/test/.*
 
