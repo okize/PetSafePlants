@@ -2,6 +2,7 @@
 'use strict';
 
 var plants = require('./data/plants.json');
+var stylesheet = require('./assets/stylesheets/styles.js')
 var React = require('react-native');
 var {
   AppRegistry,
@@ -42,7 +43,7 @@ var PetSafePlants = React.createClass({
 
   renderPlantRow: function(plant) {
     return (
-      <View style={styles.container}>
+      <View style={styles.row}>
         <Text style={styles.title}>{plant.name}</Text>
       </View>
     );
@@ -64,6 +65,6 @@ var PetSafePlants = React.createClass({
 
 });
 
-var styles = StyleSheet.create({});
+var styles = StyleSheet.create(stylesheet);
 
 AppRegistry.registerComponent('PetSafePlants', () => PetSafePlants);
