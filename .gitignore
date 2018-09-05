@@ -16,8 +16,13 @@ yarn-error.log*
 
 # ios
 ios/build/
+project.xcworkspace
+xcuserdata
 
 # android
 android/build
 android/app/build
 android/.gradle/
+android/.idea
+android/local.properties
+*.iml
