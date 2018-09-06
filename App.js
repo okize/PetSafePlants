@@ -1,23 +1,42 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
+import { Container, Content, Button, Header } from 'native-base';
+import call from 'react-native-phone-call'
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
-  }
-}
+// ASPCA Animal Poison Control Center Phone Number
+const POISON_HOTLINE = '8884264435';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: 50,
   },
+  header: {
+    marginBottom: 20,
+  }
 });
+
+export default class App extends React.Component {
+  handleOnPress = () => {
+    const args = {
+      number: POISON_HOTLINE,
+      prompt: true,
+    }
+
+    call(args).catch(console.error)
+  }
+
+  render() {
+    return (
+      <Container style={styles.container}>
+        <Content>
+          <Text style={styles.header}>Pet Safe Plants</Text>
+          <Button onPress={this.handleOnPress}>
+            <Text>Call Animal Poison Control</Text>
+          </Button>
+        </Content>
+      </Container>
+    );
+  }
+}
