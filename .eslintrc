@@ -1,0 +1,11 @@
+{
+  extends: [
+    'patientslikeme/reactNative',
+    'patientslikeme/test',
+  ],
+  'globals': {
+    '__DEV__': true,
+  },
+  rules: {
+  }
+}
