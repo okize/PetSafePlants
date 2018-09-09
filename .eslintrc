@@ -7,5 +7,6 @@
     '__DEV__': true,
   },
   rules: {
+    'react/jsx-filename-extension': 'off',
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
-import { Container, Content, Button, Header } from 'native-base';
-import call from 'react-native-phone-call'
+import { Container, Content, Button } from 'native-base';
+import call from 'react-native-phone-call';
 
 // ASPCA Animal Poison Control Center Phone Number
 const POISON_HOTLINE = '8884264435';
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   },
   header: {
     marginBottom: 20,
-  }
+  },
 });
 
 export default class App extends React.Component {
@@ -22,9 +22,10 @@ export default class App extends React.Component {
     const args = {
       number: POISON_HOTLINE,
       prompt: true,
-    }
+    };
 
-    call(args).catch(console.error)
+    // eslint-disable-next-line no-console
+    call(args).catch(console.error);
   }
 
   render() {
