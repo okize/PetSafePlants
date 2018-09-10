@@ -7,8 +7,11 @@
     "ios": "react-native run-ios",
     "link:package": "react-native link",
     "lint": "eslint --cache .",
+    "lint:ci": "yarn lint --format junit -o reports/junit/lint-results.xml",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:junit": "NODE_ENV=test JEST_JUNIT_OUTPUT=reports/junit/test-results.xml jest --ci --testResultsProcessor='jest-junit' --coverage"
   },
   "jest": {
     "preset": "react-native",
@@ -17,6 +20,7 @@
     ]
   },
   "dependencies": {
+    "jest-junit": "^5.1.0",
     "native-base": "^2.7.2",
     "react": "16.3.1",
     "react-native": "~0.55.2",
