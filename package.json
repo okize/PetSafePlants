@@ -17,6 +17,7 @@
     ]
   },
   "dependencies": {
+    "jest-junit": "^5.1.0",
     "native-base": "^2.7.2",
     "react": "16.3.1",
     "react-native": "~0.55.2",
