@@ -8,7 +8,8 @@
     "link:package": "react-native link",
     "lint": "eslint --cache .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "test:ci": "JEST_JUNIT_OUTPUT=reports/junit/test-results.xml jest --ci --coverage --reporters=default --reporters=jest-junit"
   },
   "jest": {
     "preset": "react-native",
