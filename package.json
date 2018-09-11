@@ -7,6 +7,7 @@
     "ios": "react-native run-ios",
     "link:package": "react-native link",
     "lint": "eslint --cache .",
+    "lint:ci": "yarn lint --format junit -o reports/junit/lint-results.xml",
     "start": "react-native start",
     "test": "jest",
     "test:ci": "JEST_JUNIT_OUTPUT=reports/junit/test-results.xml jest --ci --coverage --reporters=default --reporters=jest-junit"
