@@ -2251,6 +2251,27 @@ envinfo@^3.0.0:
     os-name "^2.0.1"
     which "^1.2.14"
 
+enzyme-adapter-react-16@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.2.0.tgz#c6e80f334e0a817873262d7d01ee9e4747e3c97e"
+  dependencies:
+    enzyme-adapter-utils "^1.5.0"
+    function.prototype.name "^1.1.0"
+    object.assign "^4.1.0"
+    object.values "^1.0.4"
+    prop-types "^15.6.2"
+    react-is "^16.4.2"
+    react-reconciler "^0.7.0"
+    react-test-renderer "^16.0.0-0"
+
+enzyme-adapter-utils@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.npmjs.org/enzyme-adapter-utils/-/enzyme-adapter-utils-1.5.0.tgz#a020ab3ae79bb1c85e1d51f48f35e995e0eed810"
+  dependencies:
+    function.prototype.name "^1.1.0"
+    object.assign "^4.1.0"
+    prop-types "^15.6.2"
+
 enzyme@^3.4.1:
   version "3.4.1"
   resolved "https://registry.npmjs.org/enzyme/-/enzyme-3.4.1.tgz#d305af5bdb30b8aca56d199110421588c670ea0e"
@@ -5066,6 +5087,10 @@ react-devtools-core@3.1.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
+react-is@^16.4.2:
+  version "16.4.2"
+  resolved "https://registry.npmjs.org/react-is/-/react-is-16.4.2.tgz#84891b56c2b6d9efdee577cc83501dfc5ecead88"
+
 react-native-easy-grid@0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/react-native-easy-grid/-/react-native-easy-grid-0.2.0.tgz#4718031aa1baaa2613b829fc807da288eb0d2797"
@@ -5165,6 +5190,24 @@ react-proxy@^1.1.7:
   dependencies:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
+
+react-reconciler@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.npmjs.org/react-reconciler/-/react-reconciler-0.7.0.tgz#9614894103e5f138deeeb5eabaf3ee80eb1d026d"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+
+react-test-renderer@^16.0.0-0:
+  version "16.4.2"
+  resolved "https://registry.npmjs.org/react-test-renderer/-/react-test-renderer-16.4.2.tgz#4e03eca9359bb3210d4373f7547d1364218ef74e"
+  dependencies:
+    fbjs "^0.8.16"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+    react-is "^16.4.2"
 
 react-timer-mixin@^0.13.2:
   version "0.13.4"

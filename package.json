@@ -27,6 +27,7 @@
   "devDependencies": {
     "babel-preset-react-native-stage-0": "^1.0.1",
     "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.2.0",
     "eslint-config-patientslikeme": "^1.0.1",
     "jest": "^23.5.0",
     "jest-junit": "^5.1.0",
