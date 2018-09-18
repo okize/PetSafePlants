@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<Styled(Container)
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "marginTop": 50,
+    }
+  }
+>
+  <Styled(Content)>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "marginBottom": 20,
+        }
+      }
+    >
+      Pet Safe Plants
+    </Text>
+    <Styled(Button)
+      onPress={[Function]}
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Call Animal Poison Control
+      </Text>
+    </Styled(Button)>
+  </Styled(Content)>
+</Styled(Container)>
+`;
