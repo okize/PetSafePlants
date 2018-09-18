@@ -35,6 +35,7 @@
     "eslint-config-patientslikeme": "^1.0.1",
     "jest": "^23.5.0",
     "jest-junit": "^5.1.0",
-    "jest-react-native": "^18.0.0"
+    "jest-react-native": "^18.0.0",
+    "react-dom": "^16.4.2"
   }
 }
