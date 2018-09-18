@@ -14,8 +14,14 @@
   },
   "jest": {
     "preset": "react-native",
+    "setupFiles": [
+      "./tests/testSetup"
+    ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
     ],
     "transformIgnorePatterns": [
       "/node_modules/(?!native-base)/"
