@@ -5143,8 +5143,8 @@ react-native-keyboard-aware-scroll-view@0.5.0:
     react-native-iphone-x-helper "^1.0.1"
 
 react-native-phone-call@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.npmjs.org/react-native-phone-call/-/react-native-phone-call-1.0.7.tgz#3fa53032ca7391ce1efde2ffb61a112901ca63a5"
+  version "1.0.8"
+  resolved "https://registry.npmjs.org/react-native-phone-call/-/react-native-phone-call-1.0.8.tgz#9c1e5d26957d9b573cf8cae212ef288d640eb3bc"
 
 react-native-vector-icons@4.6.0:
   version "4.6.0"
