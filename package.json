@@ -8,6 +8,7 @@
     "link:package": "react-native link",
     "lint": "eslint --cache .",
     "lint:ci": "yarn lint --format junit -o reports/junit/lint-results.xml",
+    "nuke": "rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/haste-* && rm -rf $TMPDIR/metro-* && rm -rf node_modules && rm -rf ios/plm.xcodeproj/xcuserdata/ && rm -rf ios/build/ && rm -rf android/build/ && yarn cache clean && yarn install && react-native info",
     "start": "react-native start",
     "test": "jest",
     "test:ci": "JEST_JUNIT_OUTPUT=reports/junit/test-results.xml jest --ci --coverage --reporters=default --reporters=jest-junit"
